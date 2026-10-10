@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Axel Pilling</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Axel Pilling</title>
+<meta name="description" content="Chemical engineering student at the University of Arizona and co-founder of Simple Industry.">
+<meta property="og:title" content="Axel Pilling">
+<meta property="og:description" content="Chemical engineering student at the University of Arizona and co-founder of Simple Industry.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/axel-portrait.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&amp;display=swap" rel="stylesheet">
+<style>
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: #0f1219; color: #eceef2; font-family: "Instrument Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+a:hover { color: var(--accent, #e3a65b); }
+::selection { background: rgba(143,179,255,0.35); }
+</style>
+</helmet>
+
+<div style="--bg:{{ p.bg }}; --ink:{{ p.ink }}; --soft:{{ p.soft }}; --muted:{{ p.muted }}; --rule:{{ p.rule }}; --line:{{ p.line }}; --accent:{{ p.accent }}; --deep:{{ p.deep }}; --deep-ink:{{ p.deepInk }}; --deep-muted:{{ p.deepMuted }}; --deep-accent:{{ p.deepAccent }}; --deep-line:{{ p.deepLine }}; --shadow:{{ p.shadow }}; background:var(--bg, #0f1219); color:var(--ink, #eceef2); font-family:'Instrument Sans', system-ui, sans-serif; font-size:clamp(19px, 0.55vw + 14px, 21px); line-height:1.55; transition:background-color .6s, color .6s;">
+
+  <header style="position:fixed; top:0; left:0; right:0; z-index:20; display:flex; justify-content:flex-end; align-items:center; gap:24px; padding:18px clamp(20px, 5vw, 72px); pointer-events:none;">
+    <nav style="display:flex; gap:clamp(18px, 3vw, 36px); font-size:17px; pointer-events:auto; padding:8px 16px; border-radius:999px; background:var(--bg, #10141b); box-shadow:0 0 0 1px var(--rule, #262c36);">
+      <a href="#simple-industry" style="color:var(--ink); text-decoration:none; transition:color .3s;" style-hover="color:var(--accent);">Work</a>
+      <a href="assets/Axel-Pilling-Resume.pdf" download="Axel-Pilling-Resume.pdf" target="_blank" rel="noopener" style="color:var(--ink); text-decoration:none; transition:color .3s;" style-hover="color:var(--accent);">Résumé</a>
+      <a href="#contact" style="color:var(--ink); text-decoration:none; transition:color .3s;" style-hover="color:var(--accent);">Contact</a>
+    </nav>
+  </header>
+
+  <section id="top" data-screen-label="Intro">
+    <div id="hero-wrap" style="position:relative; height:{{ heroH }};">
+      <div style="position:sticky; top:0; height:100svh; min-height:560px; overflow:hidden;">
+        <canvas id="hero-canvas" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none;"></canvas>
+        <div style="position:relative; height:100%; box-sizing:border-box; padding:clamp(96px, 14vh, 150px) clamp(20px, 5vw, 72px) clamp(28px, 6vh, 64px); display:flex; flex-direction:column; justify-content:space-between; pointer-events:none;">
+          <h1 data-lines="" style="margin:0; font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(76px, 13vw, 210px); line-height:0.88; letter-spacing:-0.035em;">
+            <span data-line="" style="display:block; overflow:hidden; padding:0.12em 0.12em 0.08em; margin:-0.12em -0.12em -0.08em;"><span>Axel</span></span>
+            <span data-line="" style="display:block; overflow:hidden; padding:0.12em 0.12em 0.08em; margin:-0.12em -0.12em -0.08em;"><span>Pilling</span></span>
+          </h1>
+          <div data-reveal="" data-delay="250" style="max-width:31em; pointer-events:auto;">
+            <p style="margin:0 0 24px; font-size:clamp(19px, 0.7vw + 14px, 23px); line-height:1.5; text-wrap:pretty;">I’m a chemical engineering student at the University of Arizona and the co-founder and product lead of Simple Industry. I’m interested in product management, AI, startups, and nuclear and other energy.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:12px 32px; font-size:18px;">
+              <a href="assets/Axel-Pilling-Resume.pdf" download="Axel-Pilling-Resume.pdf" target="_blank" rel="noopener" style="color:var(--ink); text-decoration:none; background-image:linear-gradient(var(--accent),var(--accent)),linear-gradient(var(--line),var(--line)); background-size:0% 1px,100% 1px; background-position:0 100%,0 100%; background-repeat:no-repeat; padding-bottom:3px; transition:background-size .6s cubic-bezier(.2,.7,.2,1), color .3s;" style-hover="color:var(--accent); background-size:100% 1px,100% 1px;">Download résumé (PDF)</a>
+              <a href="mailto:axelpilling@gmail.com" style="color:var(--ink); text-decoration:none; background-image:linear-gradient(var(--accent),var(--accent)),linear-gradient(var(--line),var(--line)); background-size:0% 1px,100% 1px; background-position:0 100%,0 100%; background-repeat:no-repeat; padding-bottom:3px; transition:background-size .6s cubic-bezier(.2,.7,.2,1), color .3s;" style-hover="color:var(--accent); background-size:100% 1px,100% 1px;">axelpilling@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:1320px; margin:0 auto; padding:clamp(56px, 10vh, 120px) clamp(20px, 5vw, 72px) clamp(80px, 14vh, 160px); display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap:clamp(40px, 6vw, 96px); align-items:end;">
+      <div data-reveal="" style="width:100%; max-width:440px; aspect-ratio:4 / 5; overflow:hidden; border-radius:4px;">
+        <img src="assets/axel-portrait.jpg" alt="Axel Pilling" style="width:100%; height:100%; object-fit:cover; object-position:50% 38%; display:block;">
+      </div>
+      <div data-reveal="" data-delay="120" style="max-width:34em;">
+        <div style="font-size:15px; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:20px;">Education</div>
+        <p style="margin:0 0 14px; font-family:'Newsreader', Georgia, serif; font-size:clamp(26px, 2.4vw, 34px); line-height:1.25; letter-spacing:-0.01em; text-wrap:pretty;">B.S. in Chemical Engineering with a minor in Mathematics, University of Arizona, Franke Honors.</p>
+        <p style="margin:0; color:var(--soft); text-wrap:pretty;">Graduating May 2028 on an accelerated three-year track. 4.0 GPA. National Merit Finalist.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="simple-industry" data-screen-label="Simple Industry">
+    <div style="max-width:1320px; margin:0 auto; padding:0 clamp(20px, 5vw, 72px);">
+      <div data-rule="" style="height:1px; background:var(--rule);"></div>
+    </div>
+    <div style="max-width:1320px; margin:0 auto; padding:clamp(80px, 14vh, 160px) clamp(20px, 5vw, 72px) 0;">
+      <h2 data-lines="" style="margin:0 0 20px; font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(52px, 8vw, 124px); line-height:0.95; letter-spacing:-0.03em;">
+        <span data-line="" style="display:block; overflow:hidden; padding:0.12em 0.12em 0.08em; margin:-0.12em -0.12em -0.08em;"><span>Simple Industry</span></span>
+      </h2>
+      <div data-reveal="" style="font-size:17px; color:var(--muted); margin-bottom:clamp(36px, 5vw, 56px);">Co-founder and product lead</div>
+      <p data-reveal="" style="margin:0; max-width:23em; font-family:'Newsreader', Georgia, serif; font-size:clamp(26px, 2.5vw, 36px); line-height:1.28; letter-spacing:-0.01em; text-wrap:pretty;">Simple Industry makes operations software for manufacturers. We have pilot customers and no revenue yet.</p>
+    </div>
+
+    <sc-if value="{{ motion }}" hint-placeholder-val="{{ true }}">
+      <div id="si-wrap" style="position:relative; height:330vh; margin-top:clamp(24px, 4vh, 48px);">
+        <div style="position:sticky; top:0; height:100svh; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+          <div style="position:relative; width:min(1240px, 92vw, calc((100svh - 150px) * 1.593)); aspect-ratio:2047 / 1285; margin-top:40px;">
+            <div id="si-shadow" aria-hidden="true" style="position:absolute; left:6%; right:6%; top:10%; bottom:-2%; background:var(--shadow); filter:blur(48px); opacity:0.6; border-radius:24px; transform:perspective(1800px) translate3d(0,17vh,0) rotateX(26deg) rotateZ(-5deg) scale(0.47); will-change:transform, opacity;"></div>
+            <div id="si-frame" style="position:absolute; inset:0; border-radius:10px; overflow:hidden; background:#ffffff; box-shadow:0 0 0 1px rgba(0,0,0,0.08); transform:perspective(1800px) translate3d(0,7vh,0) rotateX(26deg) rotateZ(-5deg) scale(0.5); transform-origin:50% 50%; will-change:transform; backface-visibility:hidden;">
+              <div id="si-zoom" style="position:absolute; inset:0; transform-origin:0% 30%; will-change:transform;">
+                <img src="assets/simple-industry-orders.png" alt="Simple Industry orders screen, listing open orders with due dates and status" style="width:100%; height:100%; display:block; object-fit:cover;">
+              </div>
+              <div id="si-note" style="position:absolute; top:0; right:0; bottom:0; width:48%; box-sizing:border-box; padding:clamp(16px, 4vw, 56px); display:flex; align-items:center; background:var(--bg); color:var(--ink); opacity:0; will-change:transform, opacity;">
+                <p style="margin:0; font-family:'Newsreader', Georgia, serif; font-size:clamp(16px, 2.3vw, 34px); line-height:1.25; letter-spacing:-0.01em; text-wrap:pretty;">About 25 modules, including production, inventory, purchasing, BOMs and traceability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ still }}" hint-placeholder-val="{{ false }}">
+      <div style="max-width:1320px; margin:0 auto; padding:clamp(48px, 8vh, 96px) clamp(20px, 5vw, 72px) 0;">
+        <img src="assets/simple-industry-orders.png" alt="Simple Industry orders screen, listing open orders with due dates and status" style="width:100%; display:block; border-radius:10px; box-shadow:0 30px 60px -30px var(--shadow);">
+        <p style="margin:24px 0 0; color:var(--soft);">About 25 modules, including production, inventory, purchasing, BOMs and traceability.</p>
+      </div>
+    </sc-if>
+
+    <div style="max-width:1320px; margin:0 auto; padding:clamp(56px, 9vh, 112px) clamp(20px, 5vw, 72px) clamp(96px, 16vh, 180px);">
+      <div data-reveal="" style="font-size:15px; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:8px;">What I do</div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap:0 clamp(32px, 5vw, 80px);">
+        <div style="padding-top:20px;"><div data-rule="" style="height:1px; background:var(--rule);"></div><p data-reveal="" style="margin:0; padding:20px 0 26px; text-wrap:pretty;">Visit shops and talk with the people on the floor to learn how work actually moves through them.</p></div>
+        <div style="padding-top:20px;"><div data-rule="" data-delay="80" style="height:1px; background:var(--rule);"></div><p data-reveal="" data-delay="80" style="margin:0; padding:20px 0 26px; text-wrap:pretty;">Write the requirements and make the product decisions about what gets built and when.</p></div>
+        <div style="padding-top:20px;"><div data-rule="" style="height:1px; background:var(--rule);"></div><p data-reveal="" style="margin:0; padding:20px 0 26px; text-wrap:pretty;">Build the software, with AI as a core part of how I develop it.</p></div>
+        <div style="padding-top:20px;"><div data-rule="" data-delay="80" style="height:1px; background:var(--rule);"></div><p data-reveal="" data-delay="80" style="margin:0; padding:20px 0 26px; text-wrap:pretty;">Onboard pilot customers and adapt each workflow around the operators who use it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" data-screen-label="Research">
+    <div style="max-width:1320px; margin:0 auto; padding:0 clamp(20px, 5vw, 72px);">
+      <div data-rule="" style="height:1px; background:var(--rule);"></div>
+    </div>
+    <div style="max-width:1320px; margin:0 auto; padding:clamp(80px, 14vh, 160px) clamp(20px, 5vw, 72px) clamp(24px, 4vh, 48px);">
+      <h2 data-lines="" style="margin:0 0 20px; font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(52px, 8vw, 124px); line-height:0.95; letter-spacing:-0.03em;">
+        <span data-line="" style="display:block; overflow:hidden; padding:0.12em 0.12em 0.08em; margin:-0.12em -0.12em -0.08em;"><span>Research</span></span>
+      </h2>
+      <div data-reveal="" style="font-size:17px; color:var(--muted); margin-bottom:clamp(36px, 5vw, 56px); text-wrap:pretty;">Undergraduate researcher, Prof. Paul Blowers’ computational chemistry group, University of Arizona. Since September 2025.</div>
+      <p data-reveal="" style="margin:0; max-width:23em; font-family:'Newsreader', Georgia, serif; font-size:clamp(26px, 2.5vw, 36px); line-height:1.28; letter-spacing:-0.01em; text-wrap:pretty;">I built a web-based tool that runs the group’s calculation workflow from start to finish. Three research groups now use it, and I’m using it in two studies that are still in progress.</p>
+    </div>
+
+    <sc-if value="{{ motion }}" hint-placeholder-val="{{ true }}">
+      <div id="rs-wrap" style="position:relative; height:540vh;">
+        <div style="position:sticky; top:0; height:100svh; box-sizing:border-box; padding:76px clamp(20px, 5vw, 72px) 20px; overflow:hidden;">
+          <div style="max-width:1320px; height:100%; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 400px), 1fr)); align-content:center; align-items:center; gap:clamp(8px, 3vw, 64px);">
+            <div style="position:relative; height:clamp(200px, 30svh, 380px); min-height:0;" data-canvas-box="">
+              <div style="position:absolute; inset:0; height:auto;">
+                <canvas id="rs-canvas" aria-label="Rotatable 3D model of a cyclic siloxane ring" style="position:absolute; inset:0; width:100%; height:100%; display:block; cursor:grab; touch-action:pan-y;"></canvas>
+              </div>
+              <div style="position:absolute; left:0; bottom:0; display:flex; flex-wrap:wrap; gap:4px 14px; font-size:15px; color:var(--muted);">
+                <a id="rs-tag" href="https://pubchem.ncbi.nlm.nih.gov/compound/10914" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none; transition:color .3s;" style-hover="color:var(--accent);">D3 · Hexamethylcyclotrisiloxane</a>
+                <span aria-hidden="true">Drag to rotate</span>
+              </div>
+            </div>
+            <ol style="list-style:none; margin:0; padding:0;">
+              <sc-for list="{{ steps }}" as="s" hint-placeholder-count="6">
+                <li style="border-top:1px solid var(--rule);">
+                  <button data-step="{{ $index }}" style="font:inherit; color:var(--muted); background:none; border:0; padding:8px 0; width:100%; min-height:44px; display:flex; align-items:baseline; gap:16px; text-align:left; cursor:pointer; transition:color .5s;">
+                    <span data-num="" style="font-size:15px; min-width:24px; font-variant-numeric:tabular-nums; transition:color .5s;">{{ s.num }}</span>
+                    <span style="font-family:'Newsreader', Georgia, serif; font-size:clamp(21px, 1.9vw, 28px); line-height:1.2; letter-spacing:-0.01em;">{{ s.title }}</span>
+                  </button>
+                  <div data-desc="{{ $index }}" style="display:grid; grid-template-rows:0fr; opacity:0; transition:grid-template-rows .7s cubic-bezier(.2,.7,.2,1), opacity .6s cubic-bezier(.2,.7,.2,1);">
+                    <div style="overflow:hidden; min-height:0;">
+                      <p style="margin:0; padding:0 0 16px 40px; font-size:clamp(17px, 0.4vw + 15px, 20px); color:var(--soft); max-width:30em; text-wrap:pretty;">{{ s.text }}</p>
+                    </div>
+                  </div>
+                </li>
+              </sc-for>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ still }}" hint-placeholder-val="{{ false }}">
+      <div style="max-width:1320px; margin:0 auto; padding:clamp(32px, 6vh, 64px) clamp(20px, 5vw, 72px) clamp(80px, 12vh, 140px); display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap:40px clamp(32px, 5vw, 80px); align-items:center;">
+        <img id="rs-still" alt="Ball-and-stick model of dodecamethylcyclohexasiloxane (D6)" style="width:100%; max-width:560px; aspect-ratio:1 / 1; display:block;">
+        <ol style="list-style:none; margin:0; padding:0;">
+          <sc-for list="{{ steps }}" as="s" hint-placeholder-count="6">
+            <li style="border-top:1px solid var(--rule); padding:14px 0 18px; display:flex; gap:16px;">
+              <span style="font-size:15px; min-width:24px; color:var(--accent); padding-top:6px;">{{ s.num }}</span>
+              <div>
+                <div style="font-family:'Newsreader', Georgia, serif; font-size:26px; line-height:1.2; margin-bottom:6px;">{{ s.title }}</div>
+                <p style="margin:0; color:var(--soft); text-wrap:pretty;">{{ s.text }}</p>
+              </div>
+            </li>
+          </sc-for>
+        </ol>
+      </div>
+    </sc-if>
+  </section>
+
+  <section id="experience" data-screen-label="Experience">
+    <div style="max-width:1320px; margin:0 auto; padding:0 clamp(20px, 5vw, 72px);">
+      <div data-rule="" style="height:1px; background:var(--rule);"></div>
+    </div>
+    <div style="max-width:1320px; margin:0 auto; padding:clamp(80px, 14vh, 160px) clamp(20px, 5vw, 72px) clamp(96px, 16vh, 180px);">
+      <h2 data-lines="" style="margin:0 0 clamp(40px, 6vw, 72px); font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(52px, 8vw, 124px); line-height:0.95; letter-spacing:-0.03em;">
+        <span data-line="" style="display:block; overflow:hidden; padding:0.12em 0.12em 0.08em; margin:-0.12em -0.12em -0.08em;"><span>Experience</span></span>
+      </h2>
+      <sc-for list="{{ jobs }}" as="j" hint-placeholder-count="3">
+        <div>
+          <div data-rule="" style="height:1px; background:var(--rule);"></div>
+          <div data-reveal="" style="display:flex; flex-wrap:wrap; gap:8px clamp(32px, 5vw, 80px); padding:28px 0 40px;">
+            <div style="flex:1 1 220px; color:var(--muted); font-size:17px; padding-top:8px;">{{ j.when }}</div>
+            <div style="flex:3 1 440px; max-width:38em;">
+              <h3 style="margin:0 0 4px; font-family:'Newsreader', Georgia, serif; font-weight:400; font-size:clamp(28px, 2.6vw, 38px); line-height:1.15; letter-spacing:-0.01em;">{{ j.org }}</h3>
+              <div style="font-size:18px; color:var(--soft); margin-bottom:14px;">{{ j.role }}</div>
+              <p style="margin:0; text-wrap:pretty;">{{ j.text }}</p>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="contact" data-screen-label="Contact" style="position:relative; background:var(--deep, #0a0d12); color:var(--deep-ink, #ebe8e1); min-height:100svh; overflow:hidden; transition:background-color .6s;">
+    <div style="max-width:1320px; margin:0 auto; min-height:100svh; box-sizing:border-box; padding:clamp(96px, 16vh, 180px) clamp(20px, 5vw, 72px) 40px; display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap:clamp(24px, 4vw, 64px); align-items:center;">
+      <div>
+        <h2 data-lines="" style="margin:0 0 clamp(36px, 5vw, 60px); font-family:'Newsreader', Georgia, serif; font-weight:300; font-size:clamp(52px, 8vw, 124px); line-height:0.95; letter-spacing:-0.03em;">
+          <span data-line="" style="display:block; overflow:hidden; padding:0.12em 0.12em 0.08em; margin:-0.12em -0.12em -0.08em;"><span>Contact</span></span>
+        </h2>
+        <div data-reveal="" style="margin-bottom:clamp(36px, 5vw, 56px);">
+          <a href="mailto:axelpilling@gmail.com" style="font-family:'Newsreader', Georgia, serif; font-size:clamp(30px, 4vw, 56px); line-height:1.1; letter-spacing:-0.02em; color:var(--deep-ink); text-decoration:none; overflow-wrap:anywhere; background-image:linear-gradient(var(--deep-accent),var(--deep-accent)),linear-gradient(var(--deep-line),var(--deep-line)); background-size:0% 1px,100% 1px; background-position:0 100%,0 100%; background-repeat:no-repeat; padding-bottom:6px; transition:background-size .7s cubic-bezier(.2,.7,.2,1), color .3s;" style-hover="color:var(--deep-accent); background-size:100% 1px,100% 1px;">axelpilling@gmail.com</a>
+        </div>
+        <div data-reveal="" data-delay="100" style="display:flex; flex-wrap:wrap; gap:16px 40px; font-size:20px;">
+          <a href="https://www.linkedin.com/in/axel-pilling" target="_blank" rel="noopener" style="color:var(--deep-ink); text-decoration:none; background-image:linear-gradient(var(--deep-accent),var(--deep-accent)),linear-gradient(var(--deep-line),var(--deep-line)); background-size:0% 1px,100% 1px; background-position:0 100%,0 100%; background-repeat:no-repeat; padding-bottom:3px; transition:background-size .6s cubic-bezier(.2,.7,.2,1), color .3s;" style-hover="color:var(--deep-accent); background-size:100% 1px,100% 1px;">LinkedIn</a>
+          <a href="assets/Axel-Pilling-Resume.pdf" download="Axel-Pilling-Resume.pdf" target="_blank" rel="noopener" style="color:var(--deep-ink); text-decoration:none; background-image:linear-gradient(var(--deep-accent),var(--deep-accent)),linear-gradient(var(--deep-line),var(--deep-line)); background-size:0% 1px,100% 1px; background-position:0 100%,0 100%; background-repeat:no-repeat; padding-bottom:3px; transition:background-size .6s cubic-bezier(.2,.7,.2,1), color .3s;" style-hover="color:var(--deep-accent); background-size:100% 1px,100% 1px;">Résumé (PDF)</a>
+        </div>
+      </div>
+      <div style="position:relative; height:clamp(300px, 56svh, 640px);">
+        <canvas id="ct-canvas" aria-hidden="true" style="position:absolute; inset:0; width:100%; height:100%; display:block; pointer-events:none;"></canvas>
+      </div>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;palette&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Dusk&quot;,&quot;Night&quot;,&quot;Paper&quot;,&quot;Warm&quot;],&quot;default&quot;:&quot;Dusk&quot;,&quot;tsType&quot;:&quot;'Dusk' | 'Night' | 'Paper' | 'Warm'&quot;},&quot;showHydrogens&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this._alive = true;
+    const url = new URL('./site-v2.js', document.baseURI).href;
+    import(url).then(m => m.init({ palette: this.pal(), showH: this.props.showHydrogens ?? true })).then(api => {
+      if (this._alive) this._api = api; else if (api) api.dispose();
+    }).catch(e => console.warn('site-v2.js failed', e));
+  }
+  componentDidUpdate(prev) {
+    if (!this._api) return;
+    if (prev.palette !== this.props.palette) this._api.setPalette(this.pal());
+    if (prev.showHydrogens !== this.props.showHydrogens) this._api.setShowH(this.props.showHydrogens ?? true);
+  }
+  componentWillUnmount() { this._alive = false; if (this._api) this._api.dispose(); }
+  pal() { return this.props.palette ?? 'Dusk'; }
+  renderVals() {
+    const still = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const P = {
+      Dusk: { bg: '#0f1219', ink: '#eceef2', soft: '#c4c8d2', muted: '#9198a8', rule: '#242a36', line: '#373f4e', accent: '#8fb3ff', deep: '#090b10', deepInk: '#eceef2', deepMuted: '#9198a8', deepAccent: '#8fb3ff', deepLine: '#2a303c', shadow: '#000000' },
+      Night: { bg: '#10141b', ink: '#ebe8e1', soft: '#c3c6cc', muted: '#9198a3', rule: '#262c36', line: '#3a414d', accent: '#e3a65b', deep: '#0a0d12', deepInk: '#ebe8e1', deepMuted: '#9198a3', deepAccent: '#e3a65b', deepLine: '#2c323c', shadow: '#000000' },
+      Paper: { bg: '#f3f3ef', ink: '#15171c', soft: '#3d4148', muted: '#5c6068', rule: '#dcddd7', line: '#c4c6cf', accent: '#2d55c8', deep: '#15171c', deepInk: '#f3f3ef', deepMuted: '#a3a7ae', deepAccent: '#93aaf2', deepLine: '#3a3e46', shadow: '#1d2433' },
+      Warm: { bg: '#f5f2ec', ink: '#1b1a18', soft: '#4a4640', muted: '#6b655c', rule: '#ddd6ca', line: '#cdc5b7', accent: '#b0503a', deep: '#1b1a18', deepInk: '#f5f2ec', deepMuted: '#a39c91', deepAccent: '#e08a72', deepLine: '#55504a', shadow: '#3b2f25' }
+    };
+    return {
+      p: P[this.pal()] || P.Dusk,
+      motion: !still,
+      still,
+      heroH: still ? '100svh' : '175vh',
+      steps: [
+        { num: '01', title: 'Collect', text: 'Pulls each molecule’s structure and identifiers from PubChem, along with matching reference data from NIST, so every calculation starts from a sourced geometry instead of one drawn by hand.' },
+        { num: '02', title: 'Prepare and submit', text: 'Turns those structures into Gaussian input files and submits the jobs, so running a large batch of molecules takes about the same effort as running one.' },
+        { num: '03', title: 'Parse', text: 'Reads the Gaussian output and extracts what heat-capacity work depends on: the optimized geometry, the energies, and the vibrational frequencies.' },
+        { num: '04', title: 'Deduplicate', text: 'Catches molecules that arrive from more than one source or get run more than once, so each species counts once in the results.' },
+        { num: '05', title: 'Study: cyclic siloxanes', text: 'Larger Si–O rings are more flexible and can take more shapes. For D3 through D8, I run conformer searches to find those shapes, then combine them in an ensemble analysis to calculate heat capacity.' },
+        { num: '06', title: 'Study: one conformer or many', text: 'Engineering heat-capacity calculations often rely on one representative conformer from a Gaussian calculation. This study tests whether that is accurate enough across compounds, and which structural features need fuller conformer treatment.' }
+      ],
+      jobs: [
+        { when: 'May – Aug 2026', org: 'Freeport-McMoRan', role: 'Process Automation Engineering Intern', text: 'Analyzed control loops across 11 sites, built a diagnostic copilot and a Python pipeline for bulk imports, and presented the work to leadership.' },
+        { when: 'Jul – Aug 2025 · São Paulo', org: 'Otmow', role: 'Product Management Intern', text: 'Wrote two PRDs: one for a sales dashboard, and one for a visual that shows lender credibility.' },
+        { when: 'May 2023 – Jun 2025', org: 'Traxda', role: 'Manufacturing Technician, then Shop Foreman', text: 'Started programming robotic welders at 16. As foreman, handled scheduling, directed the crew, and ran training.' }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>
