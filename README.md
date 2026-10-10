@@ -1,4 +1,4 @@
-# axelpilling.github.io
+# apilling-hash.github.io
 
 Personal site of Axel Pilling. Static HTML, no build step.
 
